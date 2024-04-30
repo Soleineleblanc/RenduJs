@@ -22,25 +22,51 @@ function fetchEntreprise() {
         .then(data => {
             contacts = data;
             //renderEntreprise();
-            const Titre = document.getElementById('titre').innerHTML;
+            const Titre = document.getElementById('titre');
             document.getElementById('titre').innerHTML =  data.entreprise.nomCommercial;
 
-            const sousTitre = document.getElementById('phraseAccroche').innerHTML;
+            const sousTitre = document.getElementById('phraseAccroche');
             document.getElementById('phraseAccroche').innerHTML =  data.entreprise.phraseAccroche;
             
-            const button = document.getElementById('button').innerHTML;
-            document.getElementById('button').innerHTML =  data.entreprise.exteAppelAction;
+            const button = document.getElementById('button');
+            document.getElementById('button').innerHTML =  data.entreprise.texteAppelAction;
 
-            const avantagesClients = document.getElementById('avantagesClients').innerHTML;
+            const avantagesClientsUL = document.getElementById('avantageClients');
+
             let avantageClient = data.entreprise.avantagesClients;
             console.log(avantageClient);
+            console.log(avantagesClientsUL);
             avantageClient.forEach(element => {
-                console.log(element);
+                //console.log(element);
                 const li= document.createElement('li');
                 li.textContent = element;
-                avantagesClients.appendChild(li);
+                avantagesClientsUL.appendChild(li);
             });
-            console.log(fetchEntreprise);
+            //console.log(fetchEntreprise);
+
+            const produitUL = document.getElementById('produitUL');
+            //document.body.appendChild(produitUL);
+
+            let produits = data.entreprise.produits;
+            console.log(produits);
+            console.log(produitUL);
+            produits.forEach(element => {
+                //console.log(element);
+                const li= document.createElement('li');
+                li.textContent = element;
+                produitUL.appendChild(li);
+                const h3= document.createElement('h3');
+                h3.textContent = element.nom;
+                li.appendChild(h3);
+                const phara= document.createElement('p');
+                phara.textContent = element.description;
+                li.appendChild(phara);
+                const image= document.createElement('img');
+                image.setAttribute("src", element.image);
+                li.appendChild(image);
+
+            });
+    
 
         })
 }

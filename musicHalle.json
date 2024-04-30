@@ -11,11 +11,13 @@
       "produits": [
         {
           "nom": "Hang",
-          "description": "Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant. Parfait pour créer une atmosphère paisible et méditative."
+          "description": "Découvrez les sonorités apaisantes du hang, un instrument mélodique captivant. Parfait pour créer une atmosphère paisible et méditative.",
+          "image": "https://source.unsplash.com/sety58tR6fI"
         },
         {
           "nom": "Kora",
-          "description": "Plongez dans la tradition musicale africaine avec nos koras artisanales. Fabriquées avec expertise, ces instruments à cordes vous transporteront vers des sonorités envoûtantes."
+          "description": "Plongez dans la tradition musicale africaine avec nos koras artisanales. Fabriquées avec expertise, ces instruments à cordes vous transporteront vers des sonorités envoûtantes.",
+          "image": "https://source.istockphoto.com/photo/la-musique-africaine-gm502934801-44249958"
         },
         {
           "nom": "Didgeridoo",
@@ -32,10 +34,6 @@
         {
           "nom": "Charango",
           "description": "Plongez dans les sonorités des Andes avec notre collection de charangos. Ces instruments à cordes offrent des mélodies captivantes et uniques."
-        },
-        {
-          "nom": "Hang Suisse",
-          "description": "Découvrez les sonorités apaisantes du hang suisse, un instrument mélodique captivant. Parfait pour créer une atmosphère paisible et méditative."
         },
         {
           "nom": "Oud",

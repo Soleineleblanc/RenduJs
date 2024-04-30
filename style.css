@@ -1,0 +1,7 @@
+/*let avantagesClients = data.entreprise.avantagesClients;
+            console.log(avantagesClients);
+            avantagesClients.forEach(element => {
+                console.log(element);
+                const li= document.createElement('li');
+                li.textContent = element;
+                document.body.appendChild(li);*/
