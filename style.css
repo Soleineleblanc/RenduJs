@@ -1,7 +1,50 @@
+/* * {
+    border: 1px solid red;
+}  */
+
+header {
+    --pico-block-spacing-vertical: 0;
+}
 nav{
     background: linear-gradient(#683711, #42230b);
     padding: 0px 15px 0px 30px;
     margin: 0;
     --pico-color: white;
-    --pico-li-color: white;
+    --pico-a-color: white;
 }
+nav a {
+    color: white;
+}
+#banner{
+   /* background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(bb7a3f93629625.5e696ee542cb6.jpg);
+    height: 100vh;*/
+    text-align: center;
+   /*--pico-h1-color: white;*/
+}
+main{
+    margin: 10px;
+}
+img {
+    object-position: 50% 50%;
+    width: 50%;
+}
+
+.flex-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.flex-service {
+    display: flex;
+    flex-direction: column;
+    column-count: 3;
+    column-width: 200px;
+
+}
+/* Style pour la carte */
+#map {
+    height: 400px;
+  }

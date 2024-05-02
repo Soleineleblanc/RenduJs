@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,26 +17,30 @@
                 <li><strong>MusicHalle</strong></li>
             </ul>
             <ul>
-                <li><a href="#Apropos" class="contrast">avantagesClients</a></li>
-                <li><a href="#" class="contrast">produits</a></li>
-                <li><a href="#" class="contrast">services</a></li>
-                <li><a href="#" class="contrast">temoignages</a></li>
+                <li><a href="#avantageClients" class="contrast">avantagesClients</a></li>
+                <li><a href="#produitDiv" class="contrast">produits</a></li>
+                <li><a href="#servicesDiv" class="contrast">services</a></li>
+                <li><a href="#temoignagesDiv" class="contrast">temoignages</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 id="titre"></h1>
-        <p id="phraseAccroche"></p>
-        <button id="button"></button>
+        <div id="banner">
+            <h1 id="titre"></h1>
+            <p id="phraseAccroche"></p>
+            <button id="button"></button>
+        </div>
         <ul id="avantageClients"></ul>
+        <div id="map"></div>
         <div id="produitDiv"></div>
         <div id="servicesDiv"></div>
         <div id="temoignagesDiv"></div>
     </main>
     <footer>
-        
+
     </footer>
-        
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
