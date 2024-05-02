@@ -1,7 +1,7 @@
-/*let avantagesClients = data.entreprise.avantagesClients;
-            console.log(avantagesClients);
-            avantagesClients.forEach(element => {
-                console.log(element);
-                const li= document.createElement('li');
-                li.textContent = element;
-                document.body.appendChild(li);*/
+nav{
+    background: linear-gradient(#683711, #42230b);
+    padding: 0px 15px 0px 30px;
+    margin: 0;
+    --pico-color: white;
+    --pico-li-color: white;
+}
